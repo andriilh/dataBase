@@ -40,7 +40,7 @@ public class Koneksi {
             connection = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
             statement = connection.createStatement();
             System.out.println("Berhasil berhubung ke MySQL\n");
-
+//          mengecek, apakah database sudah dibuat atau belum
             boolean ketemu = false;
             ResultSet result = connection.getMetaData().getCatalogs();
             while (result.next()) {
